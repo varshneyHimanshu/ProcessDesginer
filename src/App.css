@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.main-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.options-canvas-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.canvas-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid #e0e0e0;
+  padding-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Optional: add style to OptionTable if it renders a table or list */
+.option-table {
+  width: 300px;
+  max-width: 300px;
+}
+
+/* Add this class to the component if OptionTable contains a list */
+.option-table-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.option-table-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.option-table-list li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Optional: basic Canvas area styling */
+.canvas {
+  width: 100%;
+  height: 500px;
+  border: 2px dashed #ccc;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  flex-shrink: 0;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
+.left-panel,
+.right-panel {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: auto;
+  transition: width 0.3s;
+  border: 1px solid #ddd;
 }
 
-.App-link {
-  color: #61dafb;
+.left-panel {
+  border-right: none;
+  border-right: 1px solid #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-panel {
+  border-left: none;
+  border-left: 1px solid #ddd;
 }
+
+.canvas-area {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}
+

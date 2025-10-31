@@ -1,0 +1,86 @@
+/* Overlay covers entire screen */
+.newmodal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal container */
+.newmodal-container {
+  position: relative;
+  background: white;
+  padding: 20px 30px 30px 30px;
+  border-radius: 8px;
+  width: 450px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Close icon button top-right */
+.modal-close-icon {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.modal-close-icon:hover {
+  color: #dc3545; /* red on hover */
+}
+
+/* Button row styling */
+.button-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Canvas list */
+.canvas-list {
+  list-style-type: none;
+  padding-left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.canvas-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.canvas-name {
+  font-weight: 600;
+}
+
+/* Buttons for each canvas */
+.canvas-buttons button {
+  margin-left: 8px;
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.canvas-buttons button:hover {
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}

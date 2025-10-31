@@ -1,0 +1,160 @@
+/* Toolbar styling */
+.toolbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 14px; /* increased spacing */
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}
+
+.toolbar-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.toolbar-button:hover {
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.toolbar-button:active {
+  background-color: #ccc;
+}
+
+.divider {
+  width: 2px;
+  height: 28px;
+  background-color: #aaa;
+  margin: 0 6px;
+}
+
+/* button[title="Zoom In"],
+button[title="Zoom Out"] {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+button[title="Zoom In"]:hover,
+button[title="Zoom Out"]:hover {
+  background-color: #e0e0e0;
+}
+
+button[title="Zoom In"]:active,
+button[title="Zoom Out"]:active {
+  background-color: #ccc;
+}
+ */
+.toolbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px; /* increased spacing between icons */
+  padding: 8px 16px; /* adjusted padding */
+  background-color: #f7f7f7; /* matches OptionsTable theme */
+  border-bottom: 1px solid #d0d0d0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 0; /* reset font-size to control icon sizing */
+}
+
+.toolbar-button {
+  width: 32px; /* keep box size same */
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* white icon background */
+  border: 1px solid #d0d0d0; /* light silver border */
+  border-radius: 4px; /* rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  font-size: 24px; /* larger icon size */
+}
+
+.toolbar-button:hover {
+  background-color: #f0f0f0;
+}
+
+.toolbar-button:active {
+  transform: scale(0.95);
+}
+
+.divider {
+  width: 2px;
+  height: 24px;
+  background-color: #ccc;
+  margin: 0 8px;
+}
+
+/* Toolbar styling */
+.toolbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 14px; /* increased spacing */
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}
+
+.toolbar-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.toolbar-button:hover {
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.toolbar-button:active {
+  background-color: #ccc;
+}
+
+.divider {
+  width: 2px;
+  height: 28px;
+  background-color: #aaa;
+  margin: 0 6px;
+}

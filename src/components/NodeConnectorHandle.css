@@ -1,0 +1,27 @@
+.customNodeBody {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* border-radius: 10px; */
+  top: -56px;
+  height: 20px;
+  width: 20px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+div.customHandle {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+  transform: none;
+  border: none;
+  opacity: 0;
+}
