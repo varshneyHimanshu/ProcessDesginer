@@ -6,7 +6,6 @@ import NodeConnectorHandle from "./NodeConnectorHandle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ShapeNode.css";
 import { FaBackward } from "react-icons/fa";
-import { render } from "@testing-library/react";
 
 const ShapeNode = ({ id, data, selected }) => {
   // const {
