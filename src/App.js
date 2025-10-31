@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   ReactFlowProvider,
   ReactFlow,
@@ -11,7 +11,6 @@ import {
   Controls,
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
-// import "@xyflow/react/dist/sacred.css";
 import "./App.css";
 
 import OptionsTable from "./components/OptionsTable";
